@@ -1,0 +1,719 @@
+Magic 271485
+Revision Verdi_S-2021.09-SP2
+
+; Window Layout <x> <y> <width> <height> <signalwidth> <valuewidth>
+viewPort 276 25 1595 936 228 84
+
+; File list:
+; openDirFile [-d delimiter] [-s time_offset] [-rf auto_bus_rule_file] path_name file_name
+openDirFile -d / "" "/design03/rcarx5h_usr2/SYSC/yaguchtu1/X5H_CT/top_x5h_sim3.3.0/51_DFT_05MHz/work_OSCTST_02_CT_20240410_135532/waves.fsdb"
+
+; file time scale:
+; fileTimeScale ### s|ms|us|ns|ps
+
+; signal spacing:
+signalSpacing 5
+
+; windowTimeUnit is used for zoom, cursor & marker
+windowTimeUnit 1us
+
+; waveform viewport range
+zoom 0.000000 4040.000000 1u
+cursor 666.727500
+marker 666.727500
+
+; user define markers
+; userMarker time_pos marker_name color linestyle
+; visible top row signal index
+top 264
+; marker line index
+markerPos 266
+
+; event list
+; addEvent event_name event_expression
+; curEvent event_name
+
+
+
+COMPLEX_EVENT_BEGIN
+
+
+COMPLEX_EVENT_END
+
+
+
+; toolbar current search type
+; curSTATUS search_type
+curSTATUS ByChange
+
+
+aliasmapname uciapsysc100_mdctfsm.mdct_cstate
+nalias GEAR_UP		6'b000010		NULL
+nalias SY2RESET_ASS		6'b001000		NULL
+nalias STB_CLKSTP_REL		6'b100000		NULL
+nalias DOMRST_REL		6'b000011		NULL
+nalias DOMRST_ASS		6'b000110		NULL
+nalias SY2RESET_RELWAIT		6'b001001		NULL
+nalias STB_CLKSTP_GD		6'b001100		NULL
+nalias STB_PWOFF_REQ		6'b010010		NULL
+nalias STB_PWON_REQ		6'b011000		NULL
+nalias STB_CL0REL_REGCTRL		6'b100001		NULL
+nalias STB_GEAR_UP		6'b100100		NULL
+nalias SY2RESET_WAIT		6'b000111		NULL
+nalias STB_DOMRST_ASS		6'b001101		NULL
+nalias STB_HOCOSTP1		6'b010011		NULL
+nalias STB_STBY		6'b010110		NULL
+nalias STB_HOCOSTP_REL		6'b011001		NULL
+nalias STB_MOSCSTP_REL		6'b011100		NULL
+nalias STB_DOMRST_REL		6'b100101		NULL
+nalias STB_CRUN2RUN_END		6'b101010		NULL
+nalias STB_PRE_PWON		6'b010111		NULL
+nalias STB_FLS_STAB_WAIT		6'b011101		NULL
+nalias IDLE_DOMRST		6'b101011		NULL
+nalias INIT		6'b000000		NULL
+nalias SY2RESET_REL		6'b000001		NULL
+nalias IDLE		6'b000100		NULL
+nalias STB_MOSC_STP		6'b010000		NULL
+nalias GEAR_DN		6'b000101		NULL
+nalias STB_REGCTRL		6'b001010		NULL
+nalias STB_PRE_PWOFF		6'b010001		NULL
+nalias STB_HOCOSTP0		6'b010100		NULL
+nalias STB_FBIST_WAIT		6'b100010		NULL
+nalias STB_LPS_HOCO_CTRL_END		6'b101000		NULL
+nalias STB_CR2R_PWON		6'b101001		NULL
+nalias STB_CL0ASS		6'b001011		NULL
+nalias STB_CL1ASS		6'b001110		NULL
+nalias STB_PWOFF_WAIT		6'b010101		NULL
+nalias STB_LPS_HOCOSTP		6'b100110		NULL
+nalias STB_HOCOSTPREL_WAIT		6'b011010		NULL
+nalias STB_FBIST		6'b100011		NULL
+nalias STB_STBYRST_ASS		6'b001111		NULL
+nalias STB_LPS_HOCOSTP_REL		6'b100111		NULL
+nalias STB_PWON_WAIT		6'b011011		NULL
+nalias STB_CL1REL		6'b011110		NULL
+nalias STB_STBYRST_REL		6'b011111		NULL
+
+aliasmapname u7800hltm00str0.ltm_ms_status
+nalias IDLE		4'b0000		NULL
+nalias MODSEL_CNT		4'b0001		NULL
+nalias CNTMEASURE		4'b0100		NULL
+nalias DISSENSEN_CNT		4'b0101		NULL
+nalias FREQMEASURE		4'b1010		NULL
+nalias MODSEL_FREQ		4'b1000		NULL
+nalias REFEN_CNT		4'b0010		NULL
+nalias SENSEN_CNT		4'b0011		NULL
+nalias DISREFEN_CNT		4'b0110		NULL
+nalias REFEN_FREQ		4'b1001		NULL
+nalias ENDINT		4'b0111		NULL
+
+aliasmapname aprtmgdbg_cxatbsyncbridge_full.flush_state
+nalias aprtmgdbg_F_IDLE		2'b00		NULL
+nalias aprtmgdbg_F_SLAVE_FLUSH		2'b01		NULL
+nalias aprtmgdbg_F_UNDEFINED		2'bXX		NULL
+nalias aprtmgdbg_F_MSTR_FLUSH		2'b10		NULL
+nalias F_FLUSH_COMPLETE		2'b11		NULL
+
+aliasmapname aprtmgdbg_cxapbsyncbridge_full_noLPI_full.master_state
+nalias aprtmgdbg_ST_IDLE		2'b00		NULL
+nalias aprtmgdbg_ST_SETUP		2'b01		NULL
+nalias aprtmgdbg_ST_ACCESS		2'b10		NULL
+nalias aprtmgdbg_ST_ACK		2'b11		NULL
+
+aliasmapname otp_read.otp_read_state
+nalias OTP_READ_STARTJUD		8'b00100000		NULL
+nalias OTP_READ_RESET		8'b11000000		NULL
+nalias OTP_READ_PENVDD2_VDD2_HIGH		8'b00100001		NULL
+nalias OTP_READ_PDSTB_LOOP		8'b00100100		NULL
+nalias OTP_READ_PTRIM_LOW		8'b00110000		NULL
+nalias OTP_READ_PTRIM_HIGH		8'b00100101		NULL
+nalias OTP_READ_PCLK_START		8'b00101010		NULL
+nalias OTP_READ_PDSTB_LOW		8'b00110001		NULL
+nalias OTP_READ_PCLK_ENABLE		8'b00101011		NULL
+nalias OTP_READ_PCE_LOW		8'b00101110		NULL
+nalias OTP_READ_PTM_LOW		8'b00101111		NULL
+nalias OTP_READ_PENVDD2_VDD2_LOOP		8'b00100010		NULL
+nalias OTP_READ_PCE_HIGH		8'b00101000		NULL
+nalias OTP_READ_PDSTB_HIGH		8'b00100011		NULL
+nalias OTP_READ_PTRIM_LOOP		8'b00100110		NULL
+nalias OTP_READ_PCE_LOOP		8'b00101001		NULL
+nalias OTP_READ_PA		8'b00101100		NULL
+nalias OTP_READ_PENVDD2_VDD2_LOW		8'b00110010		NULL
+nalias OTP_READ_END		8'b00110011		NULL
+nalias OTP_READ_PTM_HIGH		8'b00100111		NULL
+nalias OTP_READ_PCLK_END		8'b00101101		NULL
+nalias OTP_READ_STARTCHK		8'b00011111		NULL
+
+aliasmapname otp_program.prog_now_state
+nalias PROG_IDLE		8'b10000000		NULL
+nalias PROG_STARTJUD		8'b01000010		NULL
+nalias PROG_PTRIM_WAIT55U		8'b01001000		NULL
+nalias PROG_END		8'b01100000		NULL
+nalias PROG_PENVDD2_VDD2_SET		8'b01000011		NULL
+nalias PROG_PDSTB_WAIT4U		8'b01000110		NULL
+nalias PROG_PTM_MODE_SET		8'b01001001		NULL
+nalias PROG_PPROG_SET		8'b01001100		NULL
+nalias PROG_PAIO_INC_CHK		8'b01010010		NULL
+nalias PROG_PPROG_CLR		8'b01011000		NULL
+nalias PROG_PTRIM_SET		8'b01000111		NULL
+nalias PROG_PAS_SET		8'b01001101		NULL
+nalias PROG_PWE_WAIT1P5U		8'b01010011		NULL
+nalias PROG_PAS_LOW_WAIT3P5U		8'b01010110		NULL
+nalias PROG_PCE_WAIT10U		8'b01011001		NULL
+nalias PROG_PTRIM_CLR		8'b01011100		NULL
+nalias PROG_PPROG_WAIT10U		8'b01010111		NULL
+nalias PROG_PDSTB_CLR		8'b01011101		NULL
+nalias PROG_STARTCHK		8'b01000001		NULL
+nalias PROG_PENVDD2_VDD2_WAIT2U		8'b01000100		NULL
+nalias PROG_PWE_WAIT3P5U		8'b01010000		NULL
+nalias PROG_PDSTB_SET		8'b01000101		NULL
+nalias PROG_PCE_SET		8'b01001010		NULL
+nalias PROG_PAIO_INC		8'b01010100		NULL
+nalias PROG_PWE_CLR		8'b01010001		NULL
+nalias PROG_PCE_WAIT15U		8'b01001011		NULL
+nalias PROG_PAS_WAIT10U		8'b01001110		NULL
+nalias PROG_PAS_CLR		8'b01010101		NULL
+nalias PROG_PCE_CLR		8'b01011010		NULL
+nalias PROG_PWE_TOG_ON		8'b01001111		NULL
+nalias PROG_PTM_MODE_CLR		8'b01011011		NULL
+nalias PROG_PENVDD2_VDD2_CLR		8'b01011110		NULL
+nalias PROG_END_SET		8'b01011111		NULL
+
+aliasmapname uciapsysc200_rctfbc0.fbc_cst
+nalias FBC_INIT		4'b0000		NULL
+nalias FBC_X		4'bXXXX		NULL
+nalias FBC_WAITREQ		4'b0001		NULL
+nalias FBC_GEARDN		4'b0100		NULL
+nalias FBC_START		4'b0101		NULL
+nalias FBC_POSTPWR		4'b1010		NULL
+nalias FBC_MASK0		4'b1011		NULL
+nalias FBC_PREPWR		4'b0010		NULL
+nalias FBC_RESET		4'b1000		NULL
+nalias FBC_MASK1		4'b0011		NULL
+nalias FBC_INT		4'b0110		NULL
+nalias FBC_MODE0		4'b1001		NULL
+nalias FBC_INIPWR		4'b1100		NULL
+nalias FBC_DONE		4'b1101		NULL
+nalias FBC_GEARUP		4'b0111		NULL
+
+aliasmapname uciapsysc200_arbiter2.arb2_state
+nalias MOSC_OFF2ON_4		5'b00110		NULL
+nalias MOSC_RUN_2		5'b00011		NULL
+nalias INIT_STBY		5'b11001		NULL
+nalias CRUN2FULLRUN		5'b00111		NULL
+nalias MOSC_OFF2ON_3		5'b10110		NULL
+nalias RESET		5'b00000		NULL
+nalias FULLRUN		5'b00001		NULL
+nalias MOSC_ON2OFF_3		5'b00100		NULL
+nalias INIT_2		5'b00101		NULL
+nalias MOSC_ON2OFF_2		5'b10100		NULL
+nalias SENTRY		5'b11010		NULL
+nalias MOSC_STBY		5'b10101		NULL
+nalias CRUN2SENTRY		5'b11011		NULL
+
+aliasmapname mantst_seq.mantst_now_state
+nalias MANTST_WAIT		8'b00000010		NULL
+nalias MANTST_LATCHY		8'b00001000		NULL
+nalias MANTST_THCNTEN		8'b00000011		NULL
+nalias MANTST_LATCHX		8'b00000110		NULL
+nalias MANTST_FAIL_CODE		8'b00001100		NULL
+nalias MANTST_CLR_CTST		8'b00001001		NULL
+nalias MANTST_THCNTDEN		8'b00000111		NULL
+nalias MANTST_IDLE		8'b00000000		NULL
+nalias MANTST_INIT		8'b00000001		NULL
+nalias MANTST_WAIT_ACK		8'b00000100		NULL
+nalias MANTST_CHKCODE		8'b00000101		NULL
+nalias MANTST_SEQ_END		8'b00001010		NULL
+nalias MANTST_ACK_TOV		8'b00001011		NULL
+nalias MANTST_ERR		8'b11001101		NULL
+
+aliasmapname civmtst_seq.civmtst_now_state
+nalias CIVMTST_THCNTDEN		8'b01100000		NULL
+nalias CIVMTST_SEL_PRM		8'b01010010		NULL
+nalias CIVMTST_THCNTEN		8'b01011000		NULL
+nalias CIVMTST_SET_THCHOP		8'b01100001		NULL
+nalias CIVMTST_WAIT_ACK		8'b01011001		NULL
+nalias CIVMTST_LATCH_T1		8'b01011100		NULL
+nalias CIVMTST_ERR		8'b10110010		NULL
+nalias CIVMTST_WAIT		8'b01010111		NULL
+nalias CIVMTST_IDLE		8'b01010000		NULL
+nalias CIVMTST_INIT		8'b01010001		NULL
+nalias CIVMTST_ACK_TOV		8'b10110000		NULL
+nalias CIVMTST_CLR_CTST		8'b01100010		NULL
+nalias CIVMTST_CHK_CODE		8'b01011010		NULL
+nalias CIVMTST_FAIL_CODE		8'b10110001		NULL
+nalias CIVMTST_SEQ_END		8'b01100011		NULL
+nalias CIVMTST_LATCH_X		8'b01011011		NULL
+
+aliasmapname nml_seq.nml_now_state
+nalias NOM_IDLE		8'b00100000		NULL
+nalias NOM_GET_REGPRM		8'b00100001		NULL
+nalias NOM_WAIT_1		8'b00100100		NULL
+nalias NOM_ACK_TOV		8'b10010000		NULL
+nalias NOM_THCNTEN2		8'b00110000		NULL
+nalias NOM_THCNTEN1		8'b00100101		NULL
+nalias NOM_FAIL_CODE		8'b10010001		NULL
+nalias NOM_IRQ_TEMP_LD		8'b00101010		NULL
+nalias NOM_WAIT_ACK2		8'b00110001		NULL
+nalias NOM_LATCHY		8'b00110100		NULL
+nalias NOM_CIVMD_INIT		8'b00101110		NULL
+nalias NOM_THCNTDEN1		8'b00101011		NULL
+nalias NOM_CLR_VCOSWP1		8'b00111010		NULL
+nalias NOM_THCNTDEN2		8'b00110101		NULL
+nalias NOM_WAIT_2		8'b00101111		NULL
+nalias NOM_SET_VCOSWP2		8'b00111011		NULL
+nalias NOM_SEL_THMODE		8'b00100010		NULL
+nalias NOM_LATCH_THSX		8'b00101000		NULL
+nalias NOM_THSMD_INIT		8'b00100011		NULL
+nalias NOM_WAIT_ACK1		8'b00100110		NULL
+nalias NOM_LATCH_THSY		8'b00101001		NULL
+nalias NOM_SEQ_END		8'b00111000		NULL
+nalias NOM_SET_THCHOP1		8'b00101100		NULL
+nalias NOM_CHKCODE2		8'b00110010		NULL
+nalias NOM_ERR		8'b10010010		NULL
+nalias NOM_CHKCODE1		8'b00100111		NULL
+nalias NOM_SET_VCOSWP1		8'b00111001		NULL
+nalias NOM_CLR_THCHOP1		8'b00101101		NULL
+nalias NOM_LATCH_CIVM_X		8'b00110011		NULL
+nalias NOM_SET_THCHOP2		8'b00110110		NULL
+nalias NOM_CLR_VCOSWP2		8'b00111100		NULL
+nalias NOM_CLR_THCHOP2		8'b00110111		NULL
+
+aliasmapname tst_seq.tst_now_state
+nalias TST_WAIT_1		8'b01000010		NULL
+nalias TST_TST5_INIT		8'b01001000		NULL
+nalias TST_THCNTEN_1		8'b01000011		NULL
+nalias TST_LATCH_THSOUT1		8'b01000110		NULL
+nalias TST_FAIL_TST4		8'b10100010		NULL
+nalias TST_WAIT_2		8'b01001001		NULL
+nalias TST_CHKCODE2		8'b01001100		NULL
+nalias TST_THCNTDEN1		8'b01000111		NULL
+nalias TST_LATCH_THSOUT2		8'b01001101		NULL
+nalias TST_FAIL_TST5		8'b10100011		NULL
+nalias TST_IDLE		8'b01000000		NULL
+nalias TST_TST4_INIT		8'b01000001		NULL
+nalias TST_WAIT_ACK1		8'b01000100		NULL
+nalias TST_ACK_TOV		8'b10100000		NULL
+nalias TST_CHKCODE1		8'b01000101		NULL
+nalias TST_FAIL_CODE		8'b10100001		NULL
+nalias TST_THCNTEN_2		8'b01001010		NULL
+nalias TST_ERR		8'b10100100		NULL
+nalias TST_WAIT_ACK2		8'b01001011		NULL
+nalias TST_THCNTDEN2		8'b01001110		NULL
+nalias TST_SEQ_END		8'b01001111		NULL
+
+aliasmapname ctrl_seq.now_state
+nalias TSTSEQ_WAIT		8'b11110010		NULL
+nalias CIVMTSTSEQ_WAIT		8'b11111000		NULL
+nalias MANTSTSEQ_START		8'b11111001		NULL
+nalias NORMSEQ_WAIT		8'b11110110		NULL
+nalias CIVMTSTSEQ_START		8'b11110111		NULL
+nalias STBY		8'b11110000		NULL
+nalias TSTSEQ_START		8'b11110001		NULL
+nalias NORMSEQ_START		8'b11110101		NULL
+nalias MANTSTSEQ_WAIT		8'b11111010		NULL
+
+aliasmapname otp_ctrl_seq.now_state
+nalias INITREADSEQ_START		8'b11100010		NULL
+nalias REPAIRCHECKSEQ_START		8'b11101000		NULL
+nalias INITREADSEQ_WAIT		8'b11100011		NULL
+nalias REPAIRREADSEQ_START		8'b11100110		NULL
+nalias READSEQ_START		8'b11110010		NULL
+nalias REPAIRCHECKSEQ_WAIT		8'b11101001		NULL
+nalias REPAIRREADSEQ_WAIT		8'b11100111		NULL
+nalias READSEQ_WAIT		8'b11110011		NULL
+nalias WRITESEQ_START		8'b11110110		NULL
+nalias WRITESEQ_WAIT		8'b11110111		NULL
+nalias INITREADSEQ_IDLE		8'b00000001		NULL
+nalias INITREADSEQ_END		8'b11100100		NULL
+nalias MARGINREADSEQ_START		8'b11110000		NULL
+nalias DSTBY		8'b11100101		NULL
+nalias READPREWRITESEQ_START		8'b11110100		NULL
+nalias REPAIRWRITESEQ_START		8'b11101010		NULL
+nalias MARGINREADSEQ_WAIT		8'b11110001		NULL
+nalias REPAIRWRITESEQ_WAIT		8'b11101011		NULL
+nalias READPREWRITESEQ_WAIT		8'b11110101		NULL
+
+addGroup "TOP"
+activeDirFile "" "/design03/rcarx5h_usr2/SYSC/yaguchtu1/X5H_CT/top_x5h_sim3.3.0/51_DFT_05MHz/work_OSCTST_02_CT_20240410_135532/waves.fsdb"
+addSignal -h 15 /shxsim/shxbrd/chip_top/TEST1
+addSignal -h 15 -holdScope TEST4
+addSignal -h 15 -holdScope BSMODE
+addSignal -h 15 -holdScope PRESET_N
+addSignal -h 15 -holdScope PRESETOUT_N
+addSignal -h 15 -holdScope EXTAL
+addSignal -h 15 -holdScope EXTALR
+addSignal -h 15 -holdScope TRST_N
+addSignal -h 15 -holdScope TCK
+addSignal -h 15 -holdScope TMS
+addSignal -h 15 -holdScope TDI
+addSignal -h 15 -holdScope TDO
+addSignal -h 15 -holdScope CLK_EXTFXR
+addSignal -h 15 -holdScope FXR_TXDA
+addSignal -h 15 -holdScope FXR_TXENA_N
+addSignal -h 15 -holdScope RXDA_EXTFXR
+addSignal -h 15 -holdScope FXR_TXDB
+addSignal -h 15 -holdScope FXR_TXENB_N
+addSignal -h 15 -holdScope RXDB_EXTFXR
+addSignal -h 15 -holdScope MSIOF0_SCK
+addSignal -h 15 -holdScope CAN2TX
+addSignal -h 15 -holdScope MSIOF0_TXD
+addSignal -h 15 -holdScope EXTPOC_N
+addSignal -h 15 -holdScope PWRCTL_APL
+addSignal -h 15 -holdScope PWRCTL_APU
+addSignal -h 15 -holdScope PWRCTL_SCP
+addSignal -h 15 -holdScope PWRCTL_SCPPLL
+addSignal -h 15 -holdScope PWRGD_APL
+addSignal -h 15 -holdScope PWRGD_APU
+addGroup "tdr_setting"
+addSignal -h 15 /shxsim/testbench_tdr_setting/TEST1
+addSignal -h 15 -holdScope TEST4
+addSignal -h 15 -holdScope PRESET_N
+addSignal -h 15 -holdScope TDI
+addSignal -h 15 -holdScope TMS
+addSignal -h 15 -holdScope test1_out
+addSignal -h 15 -holdScope test2_out
+addSignal -h 15 -holdScope CAN2TX
+addSignal -h 15 -holdScope MSIOF0_TXD
+addSignal -h 15 -holdScope EXTPOC_N
+addSignal -h 15 -holdScope PWRGD_APL
+addSignal -h 15 -holdScope PWRGD_APU
+addGroup "check"
+addSignal -h 15 /shxsim/shxbrd/chip_top/top/top_nonfb/fuse_readend_cl
+addSignal -h 15 /shxsim/shxbrd/chip_top/rt/rt_main/scp_main/idtest/fuse_enable
+addSignal -h 15 -holdScope authentic_out
+addSignal -h 15 /shxsim/shxbrd/chip_top/top/top_nonfb/tdr/tdr_auth_en
+addSignal -h 15 /shxsim/shxbrd/chip_top/top/preset_iso_mcu
+addGroup "TAP"
+addSignal -h 15 -UNSIGNED -HEX /shxsim/shxbrd/chip_top/top/top_main/taptop0d/TAP_INSTRUCTION[7:0]
+addSignal -h 15 -UNSIGNED -HEX -holdScope TAP_STATE[3:0]
+addSignal -h 15 -holdScope TAP_TRST
+addSignal -h 15 -holdScope TAP_TMS
+addSignal -h 15 -holdScope TAP_TDI
+addSignal -h 15 -holdScope TAP_TCK
+addSignal -h 15 -holdScope TAP_TDO
+addSignal -h 15 -holdScope TAP_TDOE_N
+addSignal -h 15 -holdScope TLR
+addSignal -h 15 -holdScope SDR
+addSignal -h 15 -holdScope CDR
+addSignal -h 15 -holdScope UDR
+addSignal -h 15 -holdScope BSD_BS2SOUT
+addSignal -h 15 -holdScope IOAC_MODE
+addSignal -h 15 -holdScope IOAC_CONTROL
+addSignal -h 15 -holdScope BSCAN_ONLY
+addSignal -h 15 -holdScope TK_SDC_MODE
+addSignal -h 15 -holdScope TDR_SCAN_RESET
+addSignal -h 15 -holdScope SIN2TDR
+addSignal -h 15 -UNSIGNED -HEX -holdScope SEQAUTH_DATAIN[255:0]
+addSignal -h 15 -UNSIGNED -HEX -holdScope SEQAUTH_DATAOUT[255:0]
+addSignal -h 15 -holdScope SECEN
+addSignal -h 15 -holdScope SECEN_LAT
+addSignal -h 15 -holdScope SECTDR_RESET
+addSignal -h 15 -holdScope DMS_TEST_MODE
+addSignal -h 15 -holdScope DMS_scan_n
+addSignal -h 15 -holdScope DMS_ac_test
+addSignal -h 15 -holdScope DMS_selmo
+addSignal -h 15 -holdScope DMS_selmi
+addSignal -h 15 -holdScope DMS_MBIST_MODE
+addSignal -h 15 -holdScope DMS_LBIST_MODE
+addSignal -h 15 -holdScope DMS_TK_MODE
+addSignal -h 15 -holdScope DMS_FBIST_MODE
+addGroup "IDTEST"
+addSignal -h 15 -UNSIGNED -HEX /shxsim/shxbrd/chip_top/rt/rt_main/scp_main/idtest/id_tapc[255:0]
+addSignal -h 15 -holdScope fuse_enable
+addSignal -h 15 -holdScope authentic_out
+addSignal -h 15 -holdScope test2
+addSignal -h 15 -holdScope test1
+addSignal -h 15 -holdScope preset
+addSignal -h 15 -holdScope extal
+addSignal -h 15 -UNSIGNED -HEX -holdScope sysmon_mask[1:0]
+addSignal -h 15 -UNSIGNED -HEX -holdScope sysmon_idtest[3:0]
+addSignal -h 15 -holdScope idtest_fid_error
+addGroup "TDR"
+addSignal -h 15 /shxsim/shxbrd/chip_top/top/top_nonfb/tdr/tlr
+addSignal -h 15 -holdScope tck
+addSignal -h 15 -holdScope tdi
+addSignal -h 15 -holdScope udr
+addSignal -h 15 -holdScope sdr
+addSignal -h 15 -holdScope instruction0
+addSignal -h 15 -holdScope instruction1
+addSignal -h 15 -holdScope instruction2
+addSignal -h 15 -holdScope instruction3
+addSignal -h 15 -holdScope instruction4
+addSignal -h 15 -UNSIGNED -HEX -holdScope mode0[63:0]
+addSignal -h 15 -UNSIGNED -HEX -holdScope mode1[63:0]
+addSignal -h 15 -UNSIGNED -HEX -holdScope mode2[63:0]
+addSignal -h 15 -UNSIGNED -HEX -holdScope mode3[63:0]
+addSignal -h 15 -UNSIGNED -HEX -holdScope mode4[63:0]
+addSignal -h 15 -holdScope tdo0
+addSignal -h 15 -holdScope tdo1
+addSignal -h 15 -holdScope tdo2
+addSignal -h 15 -holdScope tdo3
+addSignal -h 15 -holdScope tdo4
+addSignal -h 15 -holdScope tdr_auth_en
+addGroup "PAD"
+addSignal -h 15 /shxsim/shxbrd/chip_top/rt/rt_main/scp_main/preset_pad_apl
+addGroup "SYSSS"
+addSignal -h 15 /shxsim/shxbrd/chip_top/rt/rt_main/scp_main/scp_core_grp/tde_scan_mode
+addSignal -h 15 -holdScope tde_scan_mode_fb
+addSignal -h 15 -holdScope tde_ts_pmdspcplltest_pd_a
+addSignal -h 15 -holdScope tde_m_dft_mode
+addSignal -h 15 -holdScope tde_tester_func_mode
+addGroup "G2"
+addSignal -expanded -h 15 /shxsim/shxbrd/chip_top/top/top_nonfb/tdr/mode0[127:0]
+addSignal -h 15 -holdScope mode0[127]
+addSignal -h 15 -holdScope mode0[126]
+addSignal -h 15 -holdScope mode0[125]
+addSignal -h 15 -holdScope mode0[124]
+addSignal -h 15 -holdScope mode0[123]
+addSignal -h 15 -holdScope mode0[122]
+addSignal -h 15 -holdScope mode0[121]
+addSignal -h 15 -holdScope mode0[120]
+addSignal -h 15 -holdScope mode0[119]
+addSignal -h 15 -holdScope mode0[118]
+addSignal -h 15 -holdScope mode0[117]
+addSignal -h 15 -holdScope mode0[116]
+addSignal -h 15 -holdScope mode0[115]
+addSignal -h 15 -holdScope mode0[114]
+addSignal -h 15 -holdScope mode0[113]
+addSignal -h 15 -holdScope mode0[112]
+addSignal -h 15 -holdScope mode0[111]
+addSignal -h 15 -holdScope mode0[110]
+addSignal -h 15 -holdScope mode0[109]
+addSignal -h 15 -holdScope mode0[108]
+addSignal -h 15 -holdScope mode0[107]
+addSignal -h 15 -holdScope mode0[106]
+addSignal -h 15 -holdScope mode0[105]
+addSignal -h 15 -holdScope mode0[104]
+addSignal -h 15 -holdScope mode0[103]
+addSignal -h 15 -holdScope mode0[102]
+addSignal -h 15 -holdScope mode0[101]
+addSignal -h 15 -holdScope mode0[100]
+addSignal -h 15 -holdScope mode0[99]
+addSignal -h 15 -holdScope mode0[98]
+addSignal -h 15 -holdScope mode0[97]
+addSignal -h 15 -holdScope mode0[96]
+addSignal -h 15 -holdScope mode0[95]
+addSignal -h 15 -holdScope mode0[94]
+addSignal -h 15 -holdScope mode0[93]
+addSignal -h 15 -holdScope mode0[92]
+addSignal -h 15 -holdScope mode0[91]
+addSignal -h 15 -holdScope mode0[90]
+addSignal -h 15 -holdScope mode0[89]
+addSignal -h 15 -holdScope mode0[88]
+addSignal -h 15 -holdScope mode0[87]
+addSignal -h 15 -holdScope mode0[86]
+addSignal -h 15 -holdScope mode0[85]
+addSignal -h 15 -holdScope mode0[84]
+addSignal -h 15 -holdScope mode0[83]
+addSignal -h 15 -holdScope mode0[82]
+addSignal -h 15 -holdScope mode0[81]
+addSignal -h 15 -holdScope mode0[80]
+addSignal -h 15 -holdScope mode0[79]
+addSignal -h 15 -holdScope mode0[78]
+addSignal -h 15 -holdScope mode0[77]
+addSignal -h 15 -holdScope mode0[76]
+addSignal -h 15 -holdScope mode0[75]
+addSignal -h 15 -holdScope mode0[74]
+addSignal -h 15 -holdScope mode0[73]
+addSignal -h 15 -holdScope mode0[72]
+addSignal -h 15 -holdScope mode0[71]
+addSignal -h 15 -holdScope mode0[70]
+addSignal -h 15 -holdScope mode0[69]
+addSignal -h 15 -holdScope mode0[68]
+addSignal -h 15 -holdScope mode0[67]
+addSignal -h 15 -holdScope mode0[66]
+addSignal -h 15 -holdScope mode0[65]
+addSignal -h 15 -holdScope mode0[64]
+addSignal -h 15 -holdScope mode0[63]
+addSignal -h 15 -holdScope mode0[62]
+addSignal -h 15 -holdScope mode0[61]
+addSignal -h 15 -holdScope mode0[60]
+addSignal -h 15 -holdScope mode0[59]
+addSignal -h 15 -holdScope mode0[58]
+addSignal -h 15 -holdScope mode0[57]
+addSignal -h 15 -holdScope mode0[56]
+addSignal -h 15 -holdScope mode0[55]
+addSignal -h 15 -holdScope mode0[54]
+addSignal -h 15 -holdScope mode0[53]
+addSignal -h 15 -holdScope mode0[52]
+addSignal -h 15 -holdScope mode0[51]
+addSignal -h 15 -holdScope mode0[50]
+addSignal -h 15 -holdScope mode0[49]
+addSignal -h 15 -holdScope mode0[48]
+addSignal -h 15 -holdScope mode0[47]
+addSignal -h 15 -holdScope mode0[46]
+addSignal -h 15 -holdScope mode0[45]
+addSignal -h 15 -holdScope mode0[44]
+addSignal -h 15 -holdScope mode0[43]
+addSignal -h 15 -holdScope mode0[42]
+addSignal -h 15 -holdScope mode0[41]
+addSignal -h 15 -holdScope mode0[40]
+addSignal -h 15 -holdScope mode0[39]
+addSignal -h 15 -holdScope mode0[38]
+addSignal -h 15 -holdScope mode0[37]
+addSignal -h 15 -holdScope mode0[36]
+addSignal -h 15 -holdScope mode0[35]
+addSignal -h 15 -holdScope mode0[34]
+addSignal -h 15 -holdScope mode0[33]
+addSignal -h 15 -holdScope mode0[32]
+addSignal -h 15 -holdScope mode0[31]
+addSignal -h 15 -holdScope mode0[30]
+addSignal -h 15 -holdScope mode0[29]
+addSignal -h 15 -holdScope mode0[28]
+addSignal -h 15 -holdScope mode0[27]
+addSignal -h 15 -holdScope mode0[26]
+addSignal -h 15 -holdScope mode0[25]
+addSignal -h 15 -holdScope mode0[24]
+addSignal -h 15 -holdScope mode0[23]
+addSignal -h 15 -holdScope mode0[22]
+addSignal -h 15 -holdScope mode0[21]
+addSignal -h 15 -holdScope mode0[20]
+addSignal -h 15 -holdScope mode0[19]
+addSignal -h 15 -holdScope mode0[18]
+addSignal -h 15 -holdScope mode0[17]
+addSignal -h 15 -holdScope mode0[16]
+addSignal -h 15 -holdScope mode0[15]
+addSignal -h 15 -holdScope mode0[14]
+addSignal -h 15 -holdScope mode0[13]
+addSignal -h 15 -holdScope mode0[12]
+addSignal -h 15 -holdScope mode0[11]
+addSignal -h 15 -holdScope mode0[10]
+addSignal -h 15 -holdScope mode0[9]
+addSignal -h 15 -holdScope mode0[8]
+addSignal -h 15 -holdScope mode0[7]
+addSignal -h 15 -holdScope mode0[6]
+addSignal -h 15 -holdScope mode0[5]
+addSignal -h 15 -holdScope mode0[4]
+addSignal -h 15 -holdScope mode0[3]
+addSignal -h 15 -holdScope mode0[2]
+addSignal -h 15 -holdScope mode0[1]
+addSignal -h 15 -holdScope mode0[0]
+addGroup "G10"
+addSignal -h 15 /shxsim/sim_cycle[31:0]
+addGroup "G11"
+addSignal -h 15 /shxsim/shxbrd/chip_top/rt/rt_main/scp_main/sysss/mdc_single_testmode_a_awo
+addSignal -h 15 -holdScope mdc_single_testmode_a_v33s
+addSignal -h 15 /shxsim/shxbrd/chip_top/top/top_main/taptop0d/SECTDR_RESET
+addSignal -h 15 /shxsim/shxbrd/chip_top/rt/rt_main/scp_main/otphld/preset
+addSignal -h 15 /shxsim/shxbrd/chip_top/top/top_nonfb/tdr/mode0[42]
+addSignal -h 15 -holdScope mode0[41]
+addSignal -h 15 -holdScope mode0[40]
+addSignal -h 15 -holdScope mode0[39]
+addSignal -h 15 -holdScope mode0[38]
+addSignal -h 15 -holdScope mode0[37]
+addGroup "G12"
+addSignal -h 15 /shxsim/shxbrd/chip_top/rt/rt_main/scp_main/sysss/tdr_SCDSSEL_awo
+addSignal -h 15 -holdScope tdr_oco_test[2:0]
+addSignal -h 15 -holdScope tdr_oco_kt1trim[5:0]
+addSignal -h 15 -holdScope tdr_oco_ffine[7:0]
+addSignal -h 15 -holdScope tdr_oco_fcoarse
+addSignal -h 15 -holdScope tdr_oco_fadjust[8:0]
+addSignal -h 15 -holdScope tdr_oco_bgrtrim[2:0]
+addSignal -h 15 -holdScope tdr_mosc_test[12:0]
+addSignal -h 15 -holdScope tdr_mosc_sinvq
+addSignal -h 15 -holdScope tdr_mosc_resetb
+addSignal -h 15 -holdScope tdr_mosc_frcut
+addSignal -h 15 -holdScope tdr_mosc_exclk
+addSignal -h 15 -holdScope tdr_iddq_a_awo
+addSignal -h 15 -holdScope tdr_hvoco_test_awo[1:0]
+addSignal -h 15 -holdScope tdr_hvoco_frsel_awo[5:0]
+addSignal -h 15 -holdScope tdr_hvoco_fmode_awo[1:0]
+addSignal -h 15 -holdScope tdr_fit_trmclksel_r[1:0]
+addSignal -h 15 -holdScope tdr_fit_ovfsel_r[2:0]
+addSignal -h 15 -holdScope tdr_fit_fittstp_r
+addSignal -h 15 -holdScope tdr_fit_fittmod_r
+addSignal -h 15 -holdScope tdr_fit_fitten_r
+addSignal -h 15 -holdScope tdr_dcscr_a_awo
+addSignal -h 15 -holdScope tdr_ac_test
+addGroup "G13"
+addSignal -h 15 /shxsim/shxbrd/chip_top/rt/rt_main/scp_main/sysss/awovdd_TOP/f_reset_awo/awovdd_csctop/csc_cstate[4:0]
+addSignal -h 15 /shxsim/shxbrd/chip_top/rt/rt_main/scp_main/sysss/LSC_CNT3_WO_MSK_VCCSYS
+addGroup "G14"
+addSignal -h 15 /shxsim/shxbrd/chip_top/QSPI1_SPCLK
+addSignal -h 15 -holdScope QSPI0_MOSI_IO0
+addSignal -h 15 -holdScope QSPI0_MISO_IO1
+addSignal -h 15 -holdScope QSPI1_IO2
+addSignal -h 15 -holdScope QSPI1_IO3
+addSignal -h 15 -holdScope QSPI0_SSL
+addSignal -h 15 -holdScope RPC_RESET_N
+addSignal -h 15 -holdScope RPC_WP_N
+addSignal -h 15 -holdScope RPC_INT_N
+addGroup "G15"
+
+; getSignalForm Scope Hierarchy Status
+; active file of getSignalForm
+activeDirFile "" "/design03/rcarx5h_usr2/SYSC/yaguchtu1/X5H_CT/top_x5h_sim3.3.0/51_DFT_05MHz/work_OSCTST_02_CT_20240410_135532/waves.fsdb"
+
+GETSIGNALFORM_SCOPE_HIERARCHY_BEGIN
+getSignalForm close
+
+"/shxsim"
+"/shxsim/shxbrd"
+"/shxsim/shxbrd/chip_top"
+"/shxsim/shxbrd/chip_top/rt"
+"/shxsim/shxbrd/chip_top/rt/rt_main"
+"/shxsim/shxbrd/chip_top/rt/rt_main/scp_main"
+"/shxsim/shxbrd/chip_top/rt/rt_main/scp_main/otphld"
+"/shxsim/shxbrd/chip_top/rt/rt_main/scp_main/sysss"
+"/shxsim/shxbrd/chip_top/rt/rt_main/scp_main/sysss/awovdd_TOP"
+"/shxsim/shxbrd/chip_top/rt/rt_main/scp_main/sysss/awovdd_TOP/f_reset_awo"
+"/shxsim/shxbrd/chip_top/rt/rt_main/scp_main/sysss/awovdd_TOP/f_reset_awo/awovdd_csctop"
+"/shxsim/shxbrd/chip_top/top"
+"/shxsim/shxbrd/chip_top/top/top_main"
+"/shxsim/shxbrd/chip_top/top/top_nonfb"
+"/shxsim/testbench_tdr_setting"
+
+SCOPE_LIST_BEGIN
+"/shxsim/shxbrd/chip_top/top/top_main/osctsts"
+"/shxsim/shxbrd/chip_top/top/top_main/osctstn"
+"/shxsim/shxbrd/chip_top/scp/scp_main/idtest"
+"/shxsim/testbench_tdr_setting"
+"/shxsim/shxbrd/chip_top/top_main"
+"/shxsim/shxbrd/chip_top/top_main/taptop0d"
+"/shxsim/shxbrd/chip_top/scp/scp_main/"
+"/shxsim/shxbrd/chip_top/scp/"
+"/shxsim"
+"/shxsim/shxbrd"
+"/shxsim/shxbrd/chip_top"
+"/shxsim/shxbrd/chip_top/scp"
+"/shxsim/shxbrd/chip_top/scp/scp_main"
+"/shxsim/shxbrd/chip_top/scp/scp_main/sysss"
+"/shxsim/shxbrd/chip_top/scp/scp_main/sysss/f_mode"
+"/shxsim/shxbrd/chip_top/scp/scp_main/sysss/f_mode/sysv33s_modec1"
+"/shxsim/shxbrd/chip_top/scp/scp_main/sysss/f_mode/sysv33s_modec1/modec1_decode"
+"/shxsim/shxbrd/chip_top/scp/scp_main/sysss/f_mode/sysv33s_modec1/modec1_latch"
+"/shxsim/shxbrd/chip_top/scp/scp_main/pad_scp"
+"/shxsim/shxbrd/chip_top/scp/scp_main/pad_scp/IOB"
+"/shxsim/shxbrd/chip_top/top/top_main"
+"/shxsim/shxbrd/chip_top/top"
+"/shxsim/shxbrd/chip_top/top/top_main/taptop0d"
+"/shxsim/shxbrd/chip_top/scp/scp_main/idtest/idseri_idrenesas_improve"
+"/shxsim/shxbrd/chip_top/scp/scp_main/idtest/serial_register"
+"/shxsim/shxbrd/chip_top/rt/rt_main/scp_main"
+"/shxsim/shxbrd/chip_top/rt/rt_main/scp_main/scp_core_grp/sysss"
+"/shxsim/shxbrd/chip_top/rt/rt_main/scp_main/scp_core_grp/sysss/hocovcc_TOP"
+"/shxsim/shxbrd/chip_top/rt/rt_main/scp_main/scp_core_grp/sysss/isovdd_TOP"
+"/shxsim/shxbrd/chip_top/rt/rt_main/scp_main/scp_core_grp/sysss/scppll_TOP"
+"/shxsim/shxbrd/chip_top/rt/rt_main/scp_main/scp_core_grp/sysss/sysv33s_TOP"
+"/shxsim/shxbrd/chip_top/rt/rt_main/scp_main/scp_core_grp/sysss/awovdd_TOP"
+"/shxsim/shxbrd/chip_top/rt/rt_main/scp_main/scp_core_grp/sysss/sysv33s_TOP/f_power_sysv33s"
+"/shxsim/shxbrd/chip_top/rt"
+"/shxsim/shxbrd/chip_top/rt/rt_main"
+"/shxsim/shxbrd/chip_top/rt/rt_main/scp_main/scp_core_grp"
+"/shxsim/shxbrd/chip_top/rt/rt_main/scp_main/scp_core_grp/sysss/sysv33s_TOP/f_power_sysv33s/sysv33s_pmu"
+"/shxsim/shxbrd/chip_top/rt/rt_main/scp_main/scp_core_grp/sysss/sysv33s_TOP/f_power_sysv33s/sysv33s_pmu/pmpuctl"
+"/shxsim/shxbrd/chip_top/rt/rt_main/scp_main/scp_core_grp/sysss/sysv33s_TOP/f_power_sysv33s/sysv33s_pmu/pmpuctl/pmpoweruprst"
+"/shxsim/shxbrd/chip_top/rt/rt_main/scp_main/scp_core_grp/sysss/sysv33s_TOP/f_power_sysv33s/sysv33s_pmu/pmpuctl/pmpoweruprst/power_res_counter"
+"/shxsim/shxbrd/chip_top/rt/rt_main/scp_main/scp_core_grp/sysss/sysv33s_TOP/f_power_sysv33s/sysv33s_pmu/pmtrmctl"
+"/shxsim/shxbrd/chip_top/top/top_nonfb"
+"/shxsim/shxbrd/chip_top/top/top_nonfb/tdr"
+"/shxsim/shxbrd/chip_top/rt/rt_main/scp_main/sysss"
+"/shxsim/shxbrd/chip_top/rt/rt_main/scp_main/otphld"
+"/shxsim/shxbrd/chip_top/rt/rt_main/scp_main/sysss/awovdd_TOP/f_reset_awo/awovdd_csctop"
+"/shxsim/shxbrd/chip_top/rt/rt_main/scp_main/sysss/awovdd_TOP"
+"/shxsim/shxbrd/chip_top/rt/rt_main/scp_main/sysss/awovdd_TOP/f_reset_awo"
+SCOPE_LIST_END
+
+GETSIGNALFORM_SCOPE_HIERARCHY_END
+
+
